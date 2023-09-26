@@ -1,99 +1,113 @@
 from django.db import models
 
-class Клиент(models.Model):
-    имя = models.CharField(max_length=100)
-    электронная_почта = models.EmailField()
-    номер_телефона = models.CharField(max_length=20)
-    адрес = models.CharField(max_length=200)
-    дата_регистрации = models.DateField(auto_now_add=True)
+
+class Client(models.Model):
+    name = models.CharField(max_length=100)
+    email = models.EmailField()
+    number_phone = models.CharField(max_length=20)
+    address = models.CharField(max_length=200)
+    date_of_registration = models.DateField(auto_now_add=True)
 
     def __str__(self):
-        return self.имя
+        return self.name
 
-class Товар(models.Model):
-    название = models.CharField(max_length=100)
-    описание = models.TextField()
-    цена = models.DecimalField(max_digits=10, decimal_places=2)
-    количество = models.PositiveIntegerField()
-    дата_добавления = models.DateField(auto_now_add=True)
 
-    def __str__(self):
-        return self.название
-
-class Заказ(models.Model):
-    клиент = models.ForeignKey(Клиент, on_delete=models.CASCADE)
-    товары = models.ManyToManyField(Товар)
-    общая_сумма = models.DecimalField(max_digits=10, decimal_places=2)
-    дата_оформления = models.DateField(auto_now_add=True)
+class Product(models.Model):
+    title = models.CharField(max_length=100)
+    description = models.TextField()
+    prace = models.DecimalField(max_digits=10, decimal_places=2)
+    quantity = models.PositiveIntegerField()
+    date_added = models.DateField(auto_now_add=True)
 
     def __str__(self):
-        return f"Заказ #{self.id} от {self.дата_оформления}"
+        return self.title
 
-# Функции CRUD для модели Клиент
 
-def создать_клиента(имя, электронная_почта, номер_телефона, адрес):
-    клиент = Клиент(имя=имя, электронная_почта=электронная_почта, номер_телефона=номер_телефона, адрес=адрес)
-    клиент.save()
-    return клиент
+class Order(models.Model):
+    client = models.ForeignKey(Client, on_delete=models.CASCADE)
+    products = models.ManyToManyField(Product)
+    total_cost = models.DecimalField(max_digits=10, decimal_places=2)
+    registration_date = models.DateField(auto_now_add=True)
 
-def получить_клиентов():
-    return Клиент.objects.all()
+    def __str__(self):
+        return f"Заказ #{self.id} от {self.registration_date}"
 
-def получить_клиента_по_id(идентификатор):
-    return Клиент.objects.get(id=идентификатор)
 
-def обновить_клиента(клиент, имя, электронная_почта, номер_телефона, адрес):
-    клиент.имя = имя
-    клиент.электронная_почта = электронная_почта
-    клиент.номер_телефона = номер_телефона
-    клиент.адрес = адрес
-    клиент.save()
+def add_client(name, email, number_phone, address):
+    client = Client(name=name, email=email,
+                    number_phone=number_phone, address=address)
+    client.save()
+    return client
 
-def удалить_клиента(клиент):
-    клиент.delete()
 
-# Функции CRUD для модели Товар
+def return_client():
+    return Client.objects.all()
 
-def создать_товар(название, описание, цена, количество):
-    товар = Товар(название=название, описание=описание, цена=цена, количество=количество)
-    товар.save()
-    return товар
 
-def получить_товары():
-    return Товар.objects.all()
+def filter_client_name(name):
+    return Client.objects.get(name=name)
 
-def получить_товар_по_id(идентификатор):
-    return Товар.objects.get(id=идентификатор)
 
-def обновить_товар(товар, название, описание, цена, количество):
-    товар.название = название
-    товар.описание = описание
-    товар.цена = цена
-    товар.количество = количество
-    товар.save()
+def update_client(client, name, email, number_phone, address):
+    client.name = name
+    client.email = email
+    client.number_phone = number_phone
+    client.address = address
+    client.save()
 
-def удалить_товар(товар):
-    товар.delete()
 
-# Функции CRUD для модели Заказ
+def del_client(client):
+    client.delete()
 
-def создать_заказ(клиент, товары, общая_сумма):
-    заказ = Заказ(клиент=клиент, общая_сумма=общая_сумма)
-    заказ.save()
-    заказ.товары.set(товары)
-    return заказ
 
-def получить_заказы():
-    return Заказ.objects.all()
+def add_product(title, description, prace, quantity):
+    product = Product(title=title, description=description, prace=prace,
+                      quantity=quantity)
+    product.save()
+    return product
 
-def получить_заказ_по_id(идентификатор):
-    return Заказ.objects.get(id=идентификатор)
 
-def обновить_заказ(заказ, клиент, товары, общая_сумма):
-    заказ.клиент = клиент
-    заказ.товары.set(товары)
-    заказ.общая_сумма = общая_сумма
-    заказ.save()
+def return_product():
+    return Product.objects.all()
 
-def удалить_заказ(заказ):
-    заказ.delete()
+
+def filter_product_title(title):
+    return Product.objects.get(title=title)
+
+
+def update_product(product, title, description, prace, quantity):
+    product.title = title
+    product.description = description
+    product.prace = prace
+    product.quantity = quantity
+    product.save()
+
+
+def del_product(product):
+    product.delete()
+
+
+def add_Order(client, products, total_cost):
+    order = Order(client=client, total_cost=total_cost)
+    order.save()
+    order.products.set(products)
+    return order
+
+
+def return_order():
+    return Order.objects.all()
+
+
+def filter_order_title(total_cost):
+    return Order.objects.get(total_cost=total_cost)
+
+
+def update_order(order, client, products, total_cost):
+    order.client = client
+    order.products.set(products)
+    order.total_cost = total_cost
+    order.save()
+
+
+def del_order(order):
+    order.delete()
