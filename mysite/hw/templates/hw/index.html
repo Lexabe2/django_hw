@@ -1,9 +1,51 @@
-{% extends 'hw/base.html' %}
+{% extends 'base.html' %}
 
 {% block title %}
 Добавить запись
 {% endblock %}
 
 {% block content %}
-    <h1>Главная</h1>
+    <h1>Заказанные товары</h1>
+
+<h2>За последние 7 дней:</h2>
+<ul>
+  {% for order in orders_7_days %}
+    {% for item in order.items.all %}
+      {% if item.product not in products %}
+        <li>{{ item.product }}</li>
+        {% set products = products|add:[item.product] %}
+      {% endif %}
+    {% endfor %}
+  {% empty %}
+    <li>Нет заказанных товаров</li>
+  {% endfor %}
+</ul>
+
+<h2>За последние 30 дней:</h2>
+    <ul>
+      {% for order in orders_30_days %}
+        {% for item in order.items.all %}
+          {% if item.product not in products %}
+            <li>{{ item.product }}</li>
+            {% set products = products|add:[item.product] %}
+          {% endif %}
+        {% endfor %}
+      {% empty %}
+        <li>Нет заказанных товаров</li>
+      {% endfor %}
+    </ul>
+
+    <h2>За последние 365 дней:</h2>
+    <ul>
+      {% for order in orders_365_days %}
+        {% for item in order.items.all %}
+          {% if item.product not in products %}
+            <li>{{ item.product }}</li>
+            {% set products = products|add:[item.product] %}
+          {% endif %}
+        {% endfor %}
+      {% empty %}
+        <li>Нет заказанных товаров</li>
+      {% endfor %}
+    </ul>
 {% endblock %}
