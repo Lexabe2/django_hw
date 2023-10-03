@@ -18,6 +18,7 @@ class Product(models.Model):
     prace = models.DecimalField(max_digits=10, decimal_places=2)
     quantity = models.PositiveIntegerField()
     date_added = models.DateField(auto_now_add=True)
+    photo = models.ImageField(upload_to='product_photos/')
 
     def __str__(self):
         return self.title

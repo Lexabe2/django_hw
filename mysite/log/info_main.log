@@ -156,3 +156,23 @@ Traceback (most recent call last):
     raise FieldError(
 django.core.exceptions.FieldError: Cannot resolve keyword 'date' into field. Choices are: client, client_id, id, products, registration_date, total_cost
 2023-09-29 08:05:24,542 - ERROR - basehttp - basehttp.py - "GET /hw/ HTTP/1.1" 500 109866
+2023-10-03 08:59:28,188 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-10-03 09:00:32,299 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-10-03 09:02:34,377 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-10-03 09:02:37,089 - WARNING - log - log.py - Not Found: /
+2023-10-03 09:02:37,090 - WARNING - basehttp - basehttp.py - "GET / HTTP/1.1" 404 2162
+2023-10-03 09:03:16,563 - INFO - autoreload - autoreload.py - C:\Users\user\PycharmProjects\django_hw\mysite\hw\urls.py changed, reloading.
+2023-10-03 09:03:17,270 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-10-03 09:03:19,079 - WARNING - log - log.py - Not Found: /add_photo
+2023-10-03 09:03:19,080 - WARNING - basehttp - basehttp.py - "GET /add_photo HTTP/1.1" 404 2207
+2023-10-03 09:04:05,935 - INFO - basehttp - basehttp.py - "GET /hw/add_photo HTTP/1.1" 200 1869
+2023-10-03 09:04:30,607 - INFO - autoreload - autoreload.py - C:\Users\user\PycharmProjects\django_hw\mysite\hw\views.py changed, reloading.
+2023-10-03 09:04:31,252 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-10-03 09:05:27,285 - INFO - autoreload - autoreload.py - C:\Users\user\PycharmProjects\django_hw\mysite\hw\views.py changed, reloading.
+2023-10-03 09:05:27,981 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-10-03 10:01:11,442 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-10-03 10:01:13,726 - WARNING - log - log.py - Not Found: /
+2023-10-03 10:01:13,726 - WARNING - basehttp - basehttp.py - "GET / HTTP/1.1" 404 2162
+2023-10-03 10:01:21,058 - INFO - basehttp - basehttp.py - "GET /hw/add_photo HTTP/1.1" 200 2084
+2023-10-03 10:02:33,884 - INFO - autoreload - autoreload.py - C:\Users\user\PycharmProjects\django_hw\mysite\hw\views.py changed, reloading.
+2023-10-03 10:02:34,629 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
