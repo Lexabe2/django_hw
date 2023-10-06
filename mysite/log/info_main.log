@@ -176,3 +176,70 @@ django.core.exceptions.FieldError: Cannot resolve keyword 'date' into field. Cho
 2023-10-03 10:01:21,058 - INFO - basehttp - basehttp.py - "GET /hw/add_photo HTTP/1.1" 200 2084
 2023-10-03 10:02:33,884 - INFO - autoreload - autoreload.py - C:\Users\user\PycharmProjects\django_hw\mysite\hw\views.py changed, reloading.
 2023-10-03 10:02:34,629 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-10-06 08:31:28,433 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-10-06 08:31:29,884 - WARNING - log - log.py - Not Found: /
+2023-10-06 08:31:29,885 - WARNING - basehttp - basehttp.py - "GET / HTTP/1.1" 404 2162
+2023-10-06 08:31:34,707 - INFO - basehttp - basehttp.py - "GET /admin HTTP/1.1" 301 0
+2023-10-06 08:31:34,755 - INFO - basehttp - basehttp.py - "GET /admin/ HTTP/1.1" 302 0
+2023-10-06 08:31:34,839 - INFO - basehttp - basehttp.py - "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4181
+2023-10-06 08:31:37,295 - INFO - basehttp - basehttp.py - "GET /admin/ HTTP/1.1" 302 0
+2023-10-06 08:31:37,302 - INFO - basehttp - basehttp.py - "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4181
+2023-10-06 08:31:39,108 - INFO - basehttp - basehttp.py - "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4344
+2023-10-06 08:31:45,254 - INFO - basehttp - basehttp.py - "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4344
+2023-10-06 08:32:22,964 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-10-06 08:32:28,320 - INFO - basehttp - basehttp.py - "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+2023-10-06 08:32:28,372 - INFO - basehttp - basehttp.py - "GET /admin/ HTTP/1.1" 200 6994
+2023-10-06 08:32:28,381 - INFO - basehttp - basehttp.py - "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+2023-10-06 08:32:28,387 - INFO - basehttp - basehttp.py - "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+2023-10-06 08:32:48,338 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-10-06 08:32:50,515 - INFO - basehttp - basehttp.py - "GET /admin/ HTTP/1.1" 200 7367
+2023-10-06 08:32:53,273 - INFO - basehttp - basehttp.py - "GET /admin/hw/client/ HTTP/1.1" 200 8363
+2023-10-06 08:32:53,296 - INFO - basehttp - basehttp.py - "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+2023-10-06 08:32:55,057 - INFO - basehttp - basehttp.py - "GET /admin/ HTTP/1.1" 200 7367
+2023-10-06 08:32:55,888 - INFO - basehttp - basehttp.py - "GET /admin/hw/order/ HTTP/1.1" 200 8356
+2023-10-06 08:32:55,899 - INFO - basehttp - basehttp.py - "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+2023-10-06 08:32:56,956 - INFO - basehttp - basehttp.py - "GET /admin/ HTTP/1.1" 200 7367
+2023-10-06 08:32:57,792 - INFO - basehttp - basehttp.py - "GET /admin/hw/product/ HTTP/1.1" 200 8370
+2023-10-06 08:32:57,806 - INFO - basehttp - basehttp.py - "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+2023-10-06 08:32:59,285 - INFO - basehttp - basehttp.py - "GET /admin/hw/product/add/ HTTP/1.1" 200 11753
+2023-10-06 08:32:59,302 - INFO - basehttp - basehttp.py - "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+2023-10-06 08:33:43,902 - INFO - basehttp - basehttp.py - "POST /admin/hw/product/add/ HTTP/1.1" 302 0
+2023-10-06 08:33:43,920 - INFO - basehttp - basehttp.py - "GET /admin/hw/product/ HTTP/1.1" 200 9832
+2023-10-06 08:33:43,943 - INFO - basehttp - basehttp.py - "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+2023-10-06 08:33:45,259 - INFO - basehttp - basehttp.py - "GET /admin/hw/product/1/change/ HTTP/1.1" 200 12194
+2023-10-06 08:33:45,273 - INFO - basehttp - basehttp.py - "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+2023-10-06 08:33:51,370 - INFO - basehttp - basehttp.py - "GET /admin/hw/product/ HTTP/1.1" 200 9622
+2023-10-06 08:35:02,958 - INFO - autoreload - autoreload.py - C:\Users\user\PycharmProjects\django_hw\mysite\hw\models.py changed, reloading.
+2023-10-06 08:35:04,056 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-10-06 08:35:04,521 - INFO - basehttp - basehttp.py - "GET /admin/hw/product/ HTTP/1.1" 200 9665
+2023-10-06 08:35:04,533 - INFO - basehttp - basehttp.py - "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+2023-10-06 08:35:33,427 - INFO - autoreload - autoreload.py - C:\Users\user\PycharmProjects\django_hw\mysite\hw\models.py changed, reloading.
+2023-10-06 08:35:34,139 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-10-06 08:35:34,434 - INFO - basehttp - basehttp.py - "GET /admin/hw/product/ HTTP/1.1" 200 9702
+2023-10-06 08:35:34,455 - INFO - basehttp - basehttp.py - "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+2023-10-06 08:36:47,782 - INFO - autoreload - autoreload.py - C:\Users\user\PycharmProjects\django_hw\mysite\hw\models.py changed, reloading.
+2023-10-06 08:36:48,512 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-10-06 08:36:49,132 - INFO - basehttp - basehttp.py - "GET /admin/hw/order/ HTTP/1.1" 200 8356
+2023-10-06 08:36:49,143 - INFO - basehttp - basehttp.py - "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+2023-10-06 08:36:50,435 - INFO - basehttp - basehttp.py - "GET /admin/hw/order/add/ HTTP/1.1" 200 12388
+2023-10-06 08:36:50,445 - INFO - basehttp - basehttp.py - "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+2023-10-06 08:36:50,526 - INFO - basehttp - basehttp.py - "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+2023-10-06 08:36:53,652 - INFO - basehttp - basehttp.py - "GET /admin/hw/client/ HTTP/1.1" 200 8363
+2023-10-06 08:36:53,664 - INFO - basehttp - basehttp.py - "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+2023-10-06 08:36:55,310 - INFO - basehttp - basehttp.py - "GET /admin/hw/client/add/ HTTP/1.1" 200 11117
+2023-10-06 08:36:55,321 - INFO - basehttp - basehttp.py - "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+2023-10-06 08:36:59,309 - INFO - basehttp - basehttp.py - "POST /admin/hw/client/add/ HTTP/1.1" 302 0
+2023-10-06 08:36:59,329 - INFO - basehttp - basehttp.py - "GET /admin/hw/client/ HTTP/1.1" 200 10196
+2023-10-06 08:36:59,341 - INFO - basehttp - basehttp.py - "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+2023-10-06 08:37:02,608 - INFO - basehttp - basehttp.py - "GET /admin/hw/order/ HTTP/1.1" 200 8356
+2023-10-06 08:37:02,619 - INFO - basehttp - basehttp.py - "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+2023-10-06 08:37:04,154 - INFO - basehttp - basehttp.py - "GET /admin/hw/order/add/ HTTP/1.1" 200 12619
+2023-10-06 08:37:04,169 - INFO - basehttp - basehttp.py - "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+2023-10-06 08:37:10,132 - INFO - basehttp - basehttp.py - "POST /admin/hw/order/add/ HTTP/1.1" 200 12786
+2023-10-06 08:37:10,158 - INFO - basehttp - basehttp.py - "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+2023-10-06 08:37:40,712 - INFO - basehttp - basehttp.py - "POST /admin/hw/order/add/ HTTP/1.1" 302 0
+2023-10-06 08:37:40,726 - INFO - basehttp - basehttp.py - "GET /admin/hw/order/ HTTP/1.1" 200 9842
+2023-10-06 08:37:40,739 - INFO - basehttp - basehttp.py - "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+2023-10-06 08:37:44,604 - INFO - basehttp - basehttp.py - "GET /admin/hw/order/1/change/ HTTP/1.1" 200 12906
+2023-10-06 08:37:44,615 - INFO - basehttp - basehttp.py - "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+2023-10-06 08:37:46,627 - INFO - basehttp - basehttp.py - "GET /admin/hw/order/ HTTP/1.1" 200 9619

@@ -9,7 +9,8 @@ class Client(models.Model):
     date_of_registration = models.DateField(auto_now_add=True)
 
     def __str__(self):
-        return self.name
+        return f'{self.name} - {self.email} - {self.number_phone} - ' \
+               f'{self.address} - {self.date_of_registration}'
 
 
 class Product(models.Model):
@@ -21,8 +22,8 @@ class Product(models.Model):
     photo = models.ImageField(upload_to='product_photos/')
 
     def __str__(self):
-        return self.title
-
+        return f'{self.title} - {self.description} - {self.prace} - ' \
+               f'{self.quantity} - {self.photo}'
 
 class Order(models.Model):
     client = models.ForeignKey(Client, on_delete=models.CASCADE)
